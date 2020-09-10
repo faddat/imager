@@ -6,7 +6,7 @@ author: "Jacob Gadikian"
 runs:
   using: composite
   steps:
-    - uses: actions/setup-go@v2
+    - use: actions/setup-go@v2
     - name: Install Environment
       run: $GITHUB_ACTION_PATH/installenv.sh
     - name: Copy ubuntu.json
