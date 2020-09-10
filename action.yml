@@ -2,7 +2,6 @@ name: "imager"
 description: "Creates a Raspberry Pi image from a bash script, image.bash"
 author: "Jacob Gadikian"
 
-
 runs:
   using: composite
   steps:
