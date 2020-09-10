@@ -10,6 +10,27 @@ Imager is shipped as a bash script for those who prefer to run it on their own h
 
 The image is designed for headless use, and has an ssh server at port 22.  Username is ubuntu and passwoord is ubuntu.  It'll prompt you to change these after the first login.  
 
+## How to use it
+
+```
+name: imager
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: faddat/imager@v1
+    - name: Shrink The Device Image
+      run: sudo pishrink.sh -a -Z -v ubuntu-20.04.img
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: Your Pi Image
+        path: ubuntu-20.04.img.xz
+```
+
 ## v1 features
 
 * Ubuntu 20.04 server image for rpi 4
