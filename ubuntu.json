@@ -36,15 +36,20 @@
   }],
   "provisioners": [
     {
-      "type": "shell",
-      "inline": [
-        "touch /tmp/test"
-      ]
-    },
-    {
       "type": "file",
       "source": "image.bash",
       "destination": "/image.bash"
+    },
+    {
+      "type": "shell",
+      "inline": [
+        "mv /etc/resolv.conf /etc/resolv.conf.bk",
+        "echo 'nameserver 8.8.8.8' > /etc/resolv.conf",
+        "echo 'nameserver 1.1.1.1' >> /etc/resolv.conf",
+        "apt update",
+        "apt install -y curl wget",
+        "bash /image.bash"
+      ]
     }
   ],
   "post-processors": []
