@@ -12,7 +12,7 @@ runs:
       run: cp $GITHUB_ACTION_PATH/ubuntu.json .
       shell: bash
     - name: Build Image
-      run: packer build ubuntu.json
+      run: sudo packer build ubuntu.json
       shell: bash
 
 branding:
