@@ -1,4 +1,4 @@
-name: "imager"
+name: "pi-imager"
 description: "Creates a Raspberry Pi image from a bash script, image.bash"
 author: "Jacob Gadikian"
 
