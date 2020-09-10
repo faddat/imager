@@ -14,6 +14,8 @@ The image is designed for headless use, and has an ssh server at port 22.  Usern
 
 Put this in a [repoository](https://github.com/faddat/device-image-test) with an `image.bash` file in it root.  That's it. 
 
+Here is a sample workflow that you can copy-paste into .github/workflows/name-your-image.yml
+
 ```yaml
 name: My Pi Image
 on: [push, pull_request]
