@@ -6,14 +6,15 @@ author: "Jacob Gadikian"
 runs:
   using: composite
   steps:
-    - use: actions/setup-go@v2
     - name: Install Environment
       run: $GITHUB_ACTION_PATH/installenv.sh
+      shell: bash
     - name: Copy ubuntu.json
       run: cp $GITHUB_ACTION_PATH/ubuntu.json .
       shell: bash
     - name: Build Image
       run: packer build ubuntu.json
+      shell: bash
 
 branding:
   icon: "download"
