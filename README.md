@@ -70,7 +70,7 @@ with:
 
 **Hardware**
 
-Sooner than later, this setup will be able to build device images for an open source Router and Single Board Computer being designed by [pcbviet.coom](https://pcbviet.com).  I think this is the [best way](https://xkcd.com/927/) to make device images, and soon hardware mated to this flow will exist, as well.  
+Sooner than later, this setup will be able to build device images for an open source Router and Single Board Computer being designed by [pcbviet.com](https://pcbviet.com).  I think this is the [best way](https://xkcd.com/927/) to make device images, and soon hardware mated to this flow will exist, as well.  
 
 **Docker Use**
 
