@@ -7,7 +7,7 @@ Your bash script takes care of configuration and putting things in the right pla
 
 Imager is shipped as a bash script for those who prefer to run it on their own hardware, as a GitHub atction for those who would like to run it on GitHub, and as a Docker image for those who want to run it real fast-like. 
 
-## v1 featurres
+## v1 features
 
 * Ubuntu 20.04 server image for rpi 4
 * Consumes a bash script-- your repo must have a file named `image.bash` in it
