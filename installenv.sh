@@ -14,3 +14,7 @@ git clone https://github.com//mkaczanowski/packer-builder-arm/
 cd packer-builder-arm
 go mod download
 go build
+cp packer-builder-arm /usr/bin
+cd ..
+
+
