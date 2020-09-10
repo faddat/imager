@@ -4,7 +4,7 @@ author: "Jacob Gadikian"
 
 
 runs:
-  using: "composite"
+  using: composite
   steps:
     - uses: actions/setup-go@v2
     - name: Install Environment
