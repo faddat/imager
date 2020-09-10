@@ -1,11 +1,14 @@
 # Imager
-Github action for making device images from a bash script called `image.bash`
+
+Imager is a Github action, bash script, and Docker image for making Ubuntu 20.04 device images from a bash script called `image.bash`
 
 Imager takes care of the operating system and device image.
 
 Your bash script takes care of configuration and putting things in the right place in the filesystem.  
 
 Imager is shipped as a bash script for those who prefer to run it on their own hardware, as a GitHub atction for those who would like to run it on GitHub, and as a Docker image for those who want to run it real fast-like. 
+
+The image is designed for headless use, and has an ssh server at port 22.  Username is ubuntu and passwoord is ubuntu.  It'll prompt you to change these after the first loogin.  
 
 ## v1 features
 
@@ -23,6 +26,8 @@ Imager is shipped as a bash script for those who prefer to run it on their own h
 
 
 ## Future Features
+
+These are my ideas, but I very much welcome feature requests!  Please let me know what you'd like to see!
 
 **Smaller Images**
 
@@ -52,8 +57,15 @@ with:
 ZeroTier networks let everyone in the world be just one hop away from each other.  Future editions may make joining `earth` at boot time as easy as:
 
 ```
-with
+with:
   earth: true
+```
+
+and
+
+```
+with:
+  zerotier-network: e4da7455b26d23be
 ```
 
 **Hardware**
