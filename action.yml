@@ -1,12 +1,20 @@
 name: "imager"
 description: "Creates a Raspberry Pi image from a bash script, image.bash"
 author: "Jacob Gadikian"
+
+
 runs:
   using: "composite"
   steps:
+    - uses: actions/setup-go@v2
     - name: Install Environment
       run: $GITHUB_ACTION_PATH/installenv.sh
+    - name: Copy ubuntu.json
+      run: cp $GITHUB_ACTION_PATH/ubuntu.json .
       shell: bash
+    - name: Build Image
+      run: packer build ubuntu.json
+
 branding:
   icon: "download"
   color: "blue"
