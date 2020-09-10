@@ -18,3 +18,7 @@ sudo cp packer-builder-arm /usr/local/bin
 cd ..
 
 
+# INSTALL PISHRINKK
+wget https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
+chmod +x pishrink.sh
+sudo mv pishrink.sh /usr/local/bin
