@@ -6,7 +6,7 @@ runs:
   using: composite
   steps:
     - name: Install Environment
-      run: ${{ github.action_path }}/installenv.sh
+      run: bash ${{ github.action_path }}/installenv.sh
       shell: bash
     - name: Copy ubuntu.json
       run: cp $GITHUB_ACTION_PATH/ubuntu.json .
