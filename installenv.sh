@@ -13,4 +13,4 @@ cd ..
 git clone https://github.com//mkaczanowski/packer-builder-arm/
 cd packer-builder-arm
 go mod download
-go install
+go build
