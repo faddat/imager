@@ -12,7 +12,7 @@ The image is designed for headless use, and has an ssh server at port 22.  Usern
 
 ## How to use it
 
-```
+```yaml
 name: imager
 on: [push, pull_request]
 
