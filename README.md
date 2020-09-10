@@ -25,12 +25,14 @@ Imager is shipped as a bash script for those who prefer to run it on their own h
 ## Future Features
 
 **Smaller Images**
+
 Images are currently needlessly large, and Ubuntu is just pretend Debian.  Later we will use packer-builder-arm to generate images from scratch-- when we've figured out how to, that is :).
 
 * pacstrap -> Arch Linux
 * debootstrap -> debian
 
 **More Device Build Targets**
+
 There's really no reason that this setup can't build for more devices, in matrices, even.  This will probably become a 
 
 ```
@@ -46,6 +48,7 @@ with:
 ```
 
 **ZeroTier**
+
 ZeroTier networks let everyone in the world be just one hop away from each other.  Future editions may make joining `earth` at boot time as easy as:
 
 ```
@@ -54,9 +57,11 @@ with
 ```
 
 **Hardware**
+
 Sooner than later, this setup will be able to build device images for an open source Router and Single Board Computer being designed by [pcbviet.coom](https://pcbviet.com).  I think this is the [best way](https://xkcd.com/927/) to make device images, and soon hardware mated to this flow will exist, as well.  
 
 **Docker Use**
+
 This coould run faster if it used docker, so maybe it will. 
 
 ## Sponsorship and Acknowledgements
