@@ -1,8 +1,5 @@
 #!/bin/bash
 
-
-
-
 # INSTALL DEPENDENCIES
 DEBIAN_FRONTEND="noninteractive" apt install -y ca-certificates git unzip wget qemu-user-static build-essential qemu-user-static ca-certificates dosfstools gdisk kpartx parted libarchive-tools sudo xz-utils psmisc
 git clone https://github.com/hashicorp/packer --branch v1.5.5

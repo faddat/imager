@@ -35,4 +35,4 @@ RUN git clone https://github.com//mkaczanowski/packer-builder-arm/ && \
         go install
 
 # ENTRYPOINT
-ENTRYPOINT packer build
+ENTRYPOINT packer build ubuntu.json
