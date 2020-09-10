@@ -11,7 +11,7 @@ MAINTAINER jacobgadikian@gmail.com
 
 # INSTALL DEPENDENCIES
 RUN apt update && \
-	apt install -y ca-certificates git unzip wget qemu-user-static build-essential qemu-user-static ca-certificates dosfstools gdisk kpartx parted libarchive-tools sudo xz-utils psmisc
+	DEBIAN_FRONTEND="noninteractive" apt install -y ca-certificates git unzip wget qemu-user-static build-essential qemu-user-static ca-certificates dosfstools gdisk kpartx parted libarchive-tools sudo xz-utils psmisc
 
 # INSTALL GO
 RUN wget --progress=bar:force:noscroll https://golang.org/dl/go1.15.2.linux-amd64.tar.gz && \
