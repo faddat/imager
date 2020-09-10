@@ -8,12 +8,12 @@ Your bash script takes care of configuration and putting things in the right pla
 
 Imager is shipped as a bash script for those who prefer to run it on their own hardware, as a GitHub atction for those who would like to run it on GitHub, and as a Docker image for those who want to run it real fast-like. 
 
-The image is designed for headless use, and has an ssh server at port 22.  Username is ubuntu and passwoord is ubuntu.  It'll prompt you to change these after the first loogin.  
+The image is designed for headless use, and has an ssh server at port 22.  Username is ubuntu and passwoord is ubuntu.  It'll prompt you to change these after the first login.  
 
 ## v1 features
 
 * Ubuntu 20.04 server image for rpi 4
-* Consumes a bash script-- your repo must have a file named `image.bash` in it
+* Consumes a bash script-- your repo must have a file named `image.bash` in its root.  Here is an example:
   * Your bash script runs in a chroot, and 
 
 ## Stack
@@ -31,7 +31,7 @@ These are my ideas, but I very much welcome feature requests!  Please let me kno
 
 **Smaller Images**
 
-Images are currently needlessly large, and Ubuntu is just pretend Debian.  Later we will use packer-builder-arm to generate images from scratch-- when we've figured out how to, that is :).
+Images are currently needlessly large, Ubuntu is just pretend Debian, and Arch is the best.  Later we will use packer-builder-arm to generate images from scratch-- when we've figured out how to, that is :).
 
 * pacstrap -> Arch Linux
 * debootstrap -> debian
