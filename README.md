@@ -13,7 +13,7 @@ The image is designed for headless use, and has an ssh server at port 22.  Usern
 ## v1 features
 
 * Ubuntu 20.04 server image for rpi 4
-* Consumes a bash script-- your repo must have a file named `image.bash` in its root.  Here is an example:
+* Consumes a bash script-- your repo must have a file named `image.bash` in its root.  Here is an example: [device-image-test](https://github.com/faddat/device-image-test)
   * Your bash script runs in a chroot, and 
 
 ## Stack
