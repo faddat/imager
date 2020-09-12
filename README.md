@@ -39,7 +39,7 @@ jobs:
 
 * Ubuntu 20.04 server image for rpi 4
 * Consumes a bash script-- your repo must have a file named `image.bash` in its root.  Here is an example: [device-image-test](https://github.com/faddat/device-image-test)
-  * Your bash script runs in a chroot, and 
+  * Your bash script runs in a chroot, and can configure the device.  For now, you cannot do apt-get upgrade, but everything else I've tried has worked.  
 
 ## Stack
 
