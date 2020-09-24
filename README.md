@@ -102,7 +102,7 @@ Sooner than later, this setup will be able to build device images for an open so
 This coould run faster if it used docker, so maybe it will. 
 
 ## Sponsorship and Acknowledgements
-The R&D work that made this possible is funded by [Tenderrmint, Inc](https://tendermint.com).  I'm deeply grateful for their support in this endeavor. 
+The R&D work that made this possible is funded by [Tendermint, Inc](https://tendermint.com).  I'm deeply grateful for their support in this endeavor. 
 
 @mkaczanowski 's work on [packer-builder-arm](https://github.com/mkaczanowski/packer-builder-arm) made this possible. 
 
